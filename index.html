@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Algorithm Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Algorithm Playground</h1>
+      <p>Explore linear search, binary search, and bubble sort.</p>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <button id="btnGenerate">Generate Array</button>
+        <label>
+          Size
+          <input id="inputSize" type="number" min="5" max="50" value="15" />
+        </label>
+        <label>
+          Max Value
+          <input id="inputMax" type="number" min="10" max="999" value="99" />
+        </label>
+      </div>
+
+      <div class="array-box" id="arrayBox"></div>
+      <p class="hint">Tip: For binary search, the array must be sorted (use Bubble Sort first).</p>
+    </section>
+
+    <section class="card">
+      <h2>Actions</h2>
+      <div class="row">
+        <label>
+          Target
+          <input id="inputTarget" type="number" placeholder="e.g. 42" />
+        </label>
+        <button id="btnLinear">Linear Search</button>
+        <button id="btnSort">Bubble Sort</button>
+        <button id="btnBinary">Binary Search</button>
+      </div>
+
+      <div class="status" id="status"></div>
+      <pre class="log" id="log"></pre>
+    </section>
+
+    <footer>
+      <small>Built with HTML/CSS/JavaScript.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
